@@ -7,4 +7,4 @@ if os.path.exists("output.pdf"):
 
 # https://pypi.org/project/mdpdf/
 runner: CliRunner = CliRunner()
-result: Result = runner.invoke(cli.cli, ["-o", "output.pdf", "output.md"])
+result: Result = runner.invoke(cli.cli, ["-o", "output.pdf", "index.md"])
